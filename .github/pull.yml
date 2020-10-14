@@ -1,5 +1,8 @@
 version: "1"
 rules:
+  - base: master
+    upstream: basarat:master
+    mergeMethod: hardreset
   - base: fix-build
-    upstream: basarat/typescript-book:master    # change `wei` to the owner of upstream repo
+    upstream: master
     mergeMethod: hardreset
